@@ -88,6 +88,7 @@ const makeSut = (): SutTypes => {
     updateAccessTokenRepositoryStub
   }
 }
+
 describe('DbAuthentication UseCase', () => {
   test('Should call LoadAccountByEmailRepository with correct email', async () => {
     const { sut, loadAccountByEmailRepositoryStub } = makeSut()
